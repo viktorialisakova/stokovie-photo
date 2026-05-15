@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоковый Фотокаталог</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Стоковые Фотографии</h1>
+        <p>Кликните на изображение, чтобы открыть его на весь экран</p>
+    </header>
+
+    <!-- Сетка каталога -->
+    <main class="gallery-container">
+        
+        <!-- Карточка 1 -->
+        <div class="photo-card" data-full="images/gorniy peizazh.jpg">
+            <div class="photo-wrapper">
+                <img src="images/gorniy peizazh.jpg" alt="Горы и озеро" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Горный пейзаж</h3>
+                <p>Автор: Альберт Диксон</p>
+            </div>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="photo-card" data-full="images/tumannoe utro.jpg">
+            <div class="photo-wrapper">
+                <img src="images/tumannoe utro.jpg" alt="Туманный лес" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Туманное утро</h3>
+                <p>Автор: Анна Иванова</p>
+            </div>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="photo-card" data-full="images/lesnaya tropa.jpg">
+            <div class="photo-wrapper">
+                <img src="images/lesnaya tropa.jpg" alt="Лесная тропа" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Лесная тропа</h3>
+                <p>Автор: Джон Доу</p>
+            </div>
+        </div>
+
+        <!-- Карточка 4 -->
+        <div class="photo-card" data-full="images/doroga v oblakah.jpeg">
+            <div class="photo-wrapper">
+                <img src="images/doroga v oblakah.jpeg" alt="Путешествие" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Дорога в облаках</h3>
+                <p>Автор: Маркус Смит</p>
+            </div>
+        </div>
+
+        <!-- Карточка 5 -->
+        <div class="photo-card" data-full="images/dolina holmov.jpeg">
+            <div class="photo-wrapper">
+                <img src="images/dolina holmov.jpeg" alt="Зеленые холмы" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Долина холмов</h3>
+                <p>Автор: Елена Петрова</p>
+            </div>
+        </div>
+
+        <!-- Карточка 6 -->
+        <div class="photo-card" data-full="images/solnechniy svet.jpeg">
+            <div class="photo-wrapper">
+                <img src="images/solnechniy svet.jpeg" alt="Солнечный свет в лесу" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Солнечный свет</h3>
+                <p>Автор: Майкл Грин</p>
+            </div>
+        </div>
+
+                <!-- Карточка 7 -->
+        <div class="photo-card" data-full="images/vecher v lesu.jpeg">
+            <div class="photo-wrapper">
+                <img src="images/vecher v lesu.jpeg" alt="Вечер в лесу" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Вечер в лесу</h3>
+                <p>Автор: Виктория Лисакова</p>
+            </div>
+        </div>
+
+                        <!-- Карточка 8 -->
+        <div class="photo-card" data-full="images/cvetochnoe pole.jpeg">
+            <div class="photo-wrapper">
+                <img src="images/cvetochnoe pole.jpeg" alt="Цветочное поле" loading="lazy">
+            </div>
+            <div class="photo-info">
+                <h3>Цветочное поле</h3>
+                <p>Автор: Олеся Лисякина</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Полноэкранный overlay для просмотра фото -->
+    <div class="fullscreen-overlay" id="fullscreenOverlay">
+        <!-- Кнопка закрытия окна (&times; это знак крестика) -->
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <!-- Сюда будет подставляться адрес большого изображения через JS -->
+        <img src="" alt="Просмотр фото" class="fullscreen-image" id="fullscreenImg">
+    </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
